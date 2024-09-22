@@ -1,4 +1,6 @@
 # app/schemas.py
+from symtable import Class
+
 from pydantic import BaseModel, EmailStr
 from typing import Optional
 from datetime import datetime
@@ -17,3 +19,4 @@ class LoginData(BaseModel):
 class AdminCreateRequest(BaseModel):
     username: str
     password: str
+

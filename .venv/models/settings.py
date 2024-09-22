@@ -8,11 +8,14 @@ class Contacts(BaseModel):
     time = CharField()
 
 
-# last 5 labels
-class MainInfo(BaseModel):
-    aboutTitle = CharField()
-
-
-class WhyWeeBlock(BaseModel):
+class ServicesForTypes(BaseModel):
     title = CharField()
-    description = CharField()
+
+
+class ServicesTypes(BaseModel):
+    title = CharField()
+    forTypeId = CharField()
+
+class Services(BaseModel):
+    title = CharField()
+    fotServiceType = CharField()
